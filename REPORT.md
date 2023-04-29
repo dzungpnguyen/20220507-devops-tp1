@@ -77,9 +77,9 @@ trivy image dzung17/devops-openweather:0.0.3
 
 ```
 Le resultat retourne :
-(image/trivy.png)
+![trivy scanning](image/trivy.png)
 
 2. 0 erreur lint sur Dockerfile
-(image/hadolint.png)
+![add hadolint](image/hadolint.png)
 
 3. Aucune donnee sensible stockee dans l'image.
