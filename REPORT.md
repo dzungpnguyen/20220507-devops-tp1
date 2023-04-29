@@ -79,6 +79,7 @@ docker run --env LAT="<your-latitude>" --env LON="<your-longitude>" --env API_KE
 ## Bonus
 
 #### Bonus 1 : 0 CVE avec trivy
+![trivy scanning](image/trivy.png)
 
 #### Bonus 2 : 0 erreur lint sur Dockerfile
 ![add hadolint](image/hadolint.png)
