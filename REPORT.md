@@ -79,7 +79,7 @@ docker run --env LAT="<your-latitude>" --env LON="<your-longitude>" --env API_KE
 ## Bonus
 
 #### Bonus 1 : 0 CVE avec trivy
-![trivy scanning](image/trivy.png)
+![trivy scanning](image/trivy-scan.png)
 
 #### Bonus 2 : Aucune donnee sensible stockee dans l'image.
 
