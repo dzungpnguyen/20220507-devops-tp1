@@ -81,7 +81,8 @@ docker run --env LAT="<your-latitude>" --env LON="<your-longitude>" --env API_KE
 #### Bonus 1 : 0 CVE avec trivy
 ![trivy scanning](image/trivy-scanning.png)
 
-#### Bonus 2 : Aucune donnée sensible stockée dans l'image.
+#### Bonus 2 : Aucune données sensibles stockées dans l'image.
+Openweather API est stocke dans une variable d'environnment et peut etre appeler par `--env` option.
 
 #### Bonus 3 : 0 erreur lint sur Dockerfile
 ![add hadolint](image/hadolint.png)
