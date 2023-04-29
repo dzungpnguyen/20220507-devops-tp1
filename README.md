@@ -7,5 +7,5 @@
 ### Running the Docker image:
 - Open a terminal and run:
 ```
-docker run --env LAT="<your-latitude>" --env LON="<your-longitude>" --env API_KEY=<your-api-key> dzung17/devops-openweather:0.0.3
+docker run --env LAT="<your-latitude>" --env LON="<your-longitude>" --env API_KEY=<your-api-key> dzung17/devops-openweather:0.0.5
 ```

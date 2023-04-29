@@ -63,23 +63,23 @@ docker build -t <registry-name>/<image-name>:<tag-name> .
 ```
 Ici nous utilisons :
 ```
-docker build -t dzung17/devops-openweather:0.0.3 .
+docker build -t dzung17/devops-openweather:0.0.5 .
 ```
 
 #### Etape 5 : Push l'image
 ```
-docker push dzung17/devops-openweather:0.0.3
+docker push dzung17/devops-openweather:0.0.5
 ```
 
 #### Etape 6 : Run l'image
 ```
-docker run --env LAT="<your-latitude>" --env LON="<your-longitude>" --env API_KEY=<your-api-key> dzung17/devops-openweather:0.0.3
+docker run --env LAT="<your-latitude>" --env LON="<your-longitude>" --env API_KEY=<your-api-key> dzung17/devops-openweather:0.0.5
 ```
 
 ## Bonus
 
 #### Bonus 1 : 0 CVE avec trivy
-![trivy scanning](image/trivy-scan.png)
+![trivy scanning](image/trivy-scanning.png)
 
 #### Bonus 2 : Aucune donnée sensible stockée dans l'image.
 

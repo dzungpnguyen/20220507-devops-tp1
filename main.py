@@ -1,10 +1,7 @@
 import requests
 from requests.exceptions import RequestException
 import os
-import sys 
-from dotenv import load_dotenv
-
-load_dotenv()
+import sys
 
 def main():
   api_endpoint = 'https://api.openweathermap.org/data/2.5/weather'
