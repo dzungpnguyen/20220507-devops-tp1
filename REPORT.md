@@ -14,7 +14,7 @@ response = requests.get(url=api_endpoint, params=params)
 Si la requête est échouée, le code renvoie l'information sur l'erreur et termine le processus.
 
 #### Etape 2 : Tester le fonctionnement du wrapper 
-Pour tester le fonctionnement du wrapper avant de le packager dans l'image Docker, je stocke les valeurs de la latitude, la longitude et la cle d'API dans un ficher .env puis les appeler par :
+Pour tester le fonctionnement du wrapper avant de le packager dans l'image Docker, je stocke les valeurs de la latitude, la longitude et la clé d'API dans un ficher .env puis les appeler par :
 ```
 lat = os.getenv('LAT')
 lon = os.getenv('LON')
@@ -32,12 +32,6 @@ L'image de base pour notre image Docker est la dernière version d'Ubuntu.
 
 
 ```
-RUN apk --no-cache add hadolint
-```
-Installer Hadolint dans l'image.
-
-
-```
 RUN apt-get update && \
     DEBIAN_FRONTEND=noninteractive apt-get upgrade -yq && \
     apt-get install -y python3 python3-pip && \
@@ -50,6 +44,12 @@ Mettre à jour les packages, installer python3 et pip et enlever les fichiers no
 COPY main.py .
 ```
 Copier le `main.py` local vers l'image Docker.
+
+
+```
+RUN pip3 install --trusted-host pypi.python.org requests
+```
+Installer les packages necessaires pour le wrapper.
 
 
 ```
